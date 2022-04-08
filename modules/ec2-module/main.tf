@@ -30,8 +30,8 @@ resource  "aws_instance" "demo-terraform-ec2" {
     volume_type = "gp2"
   }
   tags = {
-    Name = "test-ec2"
-    Env = "GIIT-sol"
+    Name = "test1-ec2"
+    Env = "GIIT-sol1"
 }
 
 } 
