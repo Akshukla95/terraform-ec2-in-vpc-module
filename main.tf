@@ -1,5 +1,6 @@
 module "vpc-module" {
   source = "./modules/vpc-module"
+  #availability_zones      = ap-south-1a
   vpc_cidr             = var.vpc_cidr
   public_subnets_cidr  = var.public_subnets_cidr
   private_subnets_cidr = var.private_subnets_cidr
@@ -15,4 +16,5 @@ module "ec2-module" {
   demo-terraform-ami-id = var.demo-terraform-ami-id
   #demo-terraform-ec2-tags = var.demo-terraform-ec2-tags
   pub_subnet_id     = module.vpc-module.public_subnets_id
+  pvt_subnet_id     = module.vpc-module.private_subnets_id
 }

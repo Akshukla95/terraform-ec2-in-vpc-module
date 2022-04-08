@@ -24,6 +24,7 @@ variable "pub_subnet_id" {
   description = "public subnet id for EC2 instance"
   type = string
 }
-/* variable "pvt_subnet_id" {
+variable "pvt_subnet_id" {
   description = "private subnet id for EC2 instance"
-} */
+  type = string
+}

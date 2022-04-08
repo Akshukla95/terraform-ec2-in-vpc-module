@@ -11,7 +11,6 @@ variable "private_subnets_cidr" {
 }
 
 /* variable "availability_zones" {
-  type        = list
   description = "The az that the resources will be launched"
 } */
 variable "vpc_tag" {
